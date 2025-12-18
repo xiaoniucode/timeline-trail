@@ -27,8 +27,9 @@ TimeLine-Trail
 </div>
 
 <div align="center">
-<img src="docs/screenshort/index.png" alt="index" align="center" />
+<img src="docs/screenshort/index.png" alt="index"  height="60%" width="60%"/>
 </div>
+
 ## ✨ 介绍
 
 ## 🌟 功能特性
@@ -40,7 +41,7 @@ TimeLine-Trail
 镜像已打包到`docker-hub`公共仓库，在具备`docker`环境的服务器上直接运行如下命令即可安装。
 
 ```shell
-mkdir -p /root/timeline-trail/uploads
+sudo mkdir -p /root/timeline-trail/uploads
 docker run -d \
   --name timelinetrail \
   -p 8080:8080 \
