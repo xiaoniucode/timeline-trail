@@ -11,19 +11,19 @@
     <form class="layui-form layui-form-pane" action="">
         <input type="hidden" name="id" value="${config.id!''}">
         <!-- 头像隐藏字段 -->
-        <input type="hidden" name="avatar" id="avatar_url" value="${config.avatar!''}">
+        <input type="hidden" name="avatar" id="avatar_url" value="${config.avatar!'/images/avatar.svg'}">
 
         <!-- 背景隐藏字段 -->
-        <input type="hidden" name="background" id="background_url" value="${config.background!''}">
+        <input type="hidden" name="background" id="background_url" value="${config.background!'/images/bg.png'}">
 
         <!-- favicon隐藏字段 -->
-        <input type="hidden" name="favicon" id="favicon_url" value="${config.favicon!''}">
+        <input type="hidden" name="favicon" id="favicon_url" value="${config.favicon!'/images/avatar.svg'}">
         <div class="layui-form-item">
             <label class="layui-form-label">网站头像</label>
             <div class="layui-input-block">
                 <div style="width: 132px;" id="upload-avatar">
                     <div class="layui-upload-list">
-                        <img  src="${config.avatar!''}" class="layui-upload-img" id="site_avatar" style="width: 100%; height: 92px;">
+                        <img  src="${config.avatar!'/images/avatar.svg'}" class="layui-upload-img" id="site_avatar" style="width: 100%; height: 92px;">
                     </div>
                 </div>
             </div>
@@ -34,7 +34,7 @@
             <div class="layui-input-block">
                 <div style="width: 132px;" id="upload-background">
                     <div class="layui-upload-list">
-                        <img src="${config.background!''}" class="layui-upload-img" id="site_background" style="width: 100%; height: 92px;">
+                        <img src="${config.background!'/images/bg.png'}" class="layui-upload-img" id="site_background" style="width: 100%; height: 92px;">
                     </div>
                 </div>
             </div>
@@ -45,7 +45,7 @@
             <div class="layui-input-block">
                 <div style="width: 132px;" id="upload-favicon">
                     <div class="layui-upload-list">
-                        <img src="${config.favicon!''}" class="layui-upload-img" id="site_favicon" style="width: 100%; height: 92px;">
+                        <img src="${config.favicon!'/images/avatar.svg'}" class="layui-upload-img" id="site_favicon" style="width: 100%; height: 92px;">
                     </div>
                 </div>
             </div>

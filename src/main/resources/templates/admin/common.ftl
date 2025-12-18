@@ -25,7 +25,7 @@
                         <dd style="text-align: center;"><a href="/admin/logout">退出登陆</a></dd>
                     </dl>
                 </li>
-                <li style="text-align: right" class="layui-nav-item"><a href="/">访问站点</a></li>
+                <li style="text-align: right" class="layui-nav-item"><a target="_blank" href="/">访问站点</a></li>
             </div>
         </div>
     </ul>
