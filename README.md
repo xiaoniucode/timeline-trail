@@ -17,9 +17,8 @@
 </div>
 
 <div align="center">
-
-<a href="README.md"><strong>English README</strong></a> &nbsp;|&nbsp; <a href="README_ZH.md"><strong>中文文档</strong></a> &nbsp;|&nbsp;
-
+  <a href="README.md"><strong>README</strong></a> &nbsp;|&nbsp;
+  <a href="README_ZH.md"><strong>中文文档</strong></a> &nbsp;|&nbsp;
 </div>
 
 ## ✨ Introduction
