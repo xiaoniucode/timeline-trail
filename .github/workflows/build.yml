@@ -1,0 +1,67 @@
+name: Docker镜像构建和发布
+
+on:
+  push:
+    tags:
+      - 'v*'
+env:
+  # docker 项目仓库
+  DOCKER_REPOSITORY: 'xiaoniucode/timeline-trail'
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 检出代码
+      - uses: actions/checkout@v4
+
+      # 2. 设置 Java 环境
+      - name: 设置 JDK 8
+        uses: actions/setup-java@v4
+        with:
+          java-version: '8'
+          distribution: 'temurin'
+
+      # 3. 构建JAR包
+      - name: Maven打包jar
+        run: mvn clean package -DskipTests
+
+      # 4. 登录到 Docker Hub
+      - name: 登录到 Docker Hub
+        run: |
+          echo "登录到 Docker Hub..."
+          echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
+
+      # 5. 提取版本标签
+      - name: 从tags中提取版本号
+        id: version
+        run: |
+          # 从标签中提取版本号，如 v0.1.0
+          VERSION="${GITHUB_REF#refs/tags/v}"
+          echo "version=${VERSION}" >> $GITHUB_OUTPUT
+
+      # 6. 构建和推送 Docker 镜像
+      - name: 构建docker镜像并发布到docker hub公开仓库
+        run: |
+          # 提取版本号
+          VERSION="${{ steps.version.outputs.version }}"
+
+          echo "开始构建 Docker 镜像..."
+          echo "版本号: $VERSION"
+          echo "Docker 镜像: ${{ env.DOCKER_REPOSITORY }}"
+
+          # 构建镜像
+          docker build . \
+            --file Dockerfile \
+            --tag ${{ env.DOCKER_REPOSITORY }}:latest \
+            --tag ${{ env.DOCKER_REPOSITORY }}:$VERSION
+
+          # 推送镜像到 Docker Hub
+          echo "推送镜像到 Docker Hub..."
+          docker push ${{ env.DOCKER_REPOSITORY }}:latest
+          docker push ${{ env.DOCKER_REPOSITORY }}:$VERSION
+
+          echo "镜像已推送到 Docker Hub:"
+          echo "   - ${{ env.DOCKER_REPOSITORY }}:latest"
+          echo "   - ${{ env.DOCKER_REPOSITORY }}:$VERSION"
