@@ -14,10 +14,6 @@
   <img src="https://img.shields.io/badge/timeline--trail-0.1.0-blue?style=for-the-badge" alt="timeline-trail:0.1.0"/>
 </a>
 
-<a href="https://somsubhra.github.io/github-release-stats/?username=xiaoniucode&repository=timeline-trail">
-  <img src="https://img.shields.io/github/downloads/xiaoniucode/timeline-trail/total?style=for-the-badge" alt="Downloads"/>
-</a>
-
 </div>
 
 <div align="center">
