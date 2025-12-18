@@ -32,7 +32,7 @@ TimeLine-Trail
 是一个特别的个人履历可视化展示网站。与传统简历不同，它采用时间线与树状轨迹相结合的方式，将分散的经历点连接成清晰的成长路径。每个职业节点、教育经历和重要里程碑都以节点形式呈现，展现它们之间的关联与演进逻辑，更易于理解。
 
 <div align="center">
-<img src="docs/screenshort/index.png" alt="index"  height="60%" width="60%"/>
+<img src="docs/screenshort/dynamic.gif" alt="index"  height="60%" width="60%"/>
 </div>
 
 ## 🚀 快速开始
@@ -59,7 +59,7 @@ docker run -d \
 <table>
   <tr>
     <td align="center">
-      <img src="docs/screenshort/index.png" alt="首页" width="95%"><br>
+      <img src="docs/screenshort/index2.png" alt="首页" width="95%"><br>
       <strong>首页</strong>
     </td>
     <td align="center">
@@ -116,3 +116,7 @@ docker run -d \
     <img src="https://api.star-history.com/svg?repos=xiaoniucode/timeline-trail&type=Date" alt="Star History">
   </a>
 </p>
+
+## 🙏致谢
+- 首页设计灵感来自materliu
+- jetbrains IDEA开发工具
