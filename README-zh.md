@@ -29,7 +29,7 @@ TimeLine-Trail
 ## ✨ 介绍
 
 **Timeline Trail**
-是一个特别的个人履历可视化展示网站。采用时间线与树状轨迹相结合的方式，将分散的经历点连接成清晰的成长路径。每个职业节点、教育经历和重要里程碑都以节点形式呈现，展现它们之间的关联与演进逻辑，更易于理解。
+是一个特别的个人履历可视化展示网站。采用时间线与树状轨迹相结合的方式，将分散的经历点连接成清晰的成长路径，重要里程碑都以节点形式呈现，展现它们之间的关联与演进逻辑，更易于理解。
 
 <div align="center">
 <img src="docs/screenshort/index.png" alt="index"  height="60%" width="60%"/>
@@ -93,17 +93,17 @@ docker run -d \
 
 ## 技术栈
 
-| 层级 | 技术              | 用途           |
-|------|-----------------|--------------|
+| 层级     | 技术              | 用途           |
+|--------|-----------------|--------------|
 | **后端** | Java 8          | 主要编程语言       |
-| | Spring Boot 2.x | 应用框架         |
-| | JPA (Hibernate) | 数据持久层        |
-| | H2 Database     | 嵌入式数据库       |
-| | Freemarker      | 服务端模板引擎      |
+|        | Spring Boot 2.x | 应用框架         |
+|        | JPA (Hibernate) | 数据持久层        |
+|        | H2 Database     | 嵌入式数据库       |
+|        | Freemarker      | 服务端模板引擎      |
 | **前端** | LayUI           | UI 组件库       |
-| | jQuery          | DOM 操作与 AJAX |
-| | CSS Sprite      | 图片优化技术       |
-| | jsoneditor      | json文本编辑     |
+|        | jQuery          | DOM 操作与 AJAX |
+|        | CSS Sprite      | 图片优化技术       |
+|        | jsoneditor      | json文本编辑     |
 
 ## 问题反馈
 
@@ -118,5 +118,10 @@ docker run -d \
 </p>
 
 ## 🙏致谢
+
 - 首页设计灵感来自materliu
 - jetbrains IDEA开发工具
+
+## 🪧项目推荐
+
+- 🚀 [https://github.com/xiaoniucode/etp](https://github.com/xiaoniucode/etp)
