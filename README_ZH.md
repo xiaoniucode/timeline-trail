@@ -33,7 +33,7 @@ TimeLine-Trail
 
 ## 🚀 快速开始
 
-镜像已打包到`docker-hub`公共仓库，在具备`docker`环境的服务器上直接运行如下命令即可安装。
+镜像已打包到[docker-hub](https://hub.docker.com/r/xiaoniucode/timeline-trail)公共仓库，在具备`docker`环境的服务器上直接运行如下命令即可安装。
 
 ```shell
 sudo mkdir -p /root/timeline-trail/uploads

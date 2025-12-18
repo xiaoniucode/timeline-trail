@@ -31,7 +31,7 @@
 
 ## 🚀 Quick Start
 
-The image has been packaged and pushed to the public `docker-hub` repository. On a server with Docker installed, run the following command to deploy:
+The image has been packaged and pushed to the public [docker-hub](https://hub.docker.com/r/xiaoniucode/timeline-trail)repository. On a server with Docker installed, run the following command to deploy:
 
 ```shell
 sudo mkdir -p /root/timeline-trail/uploads
