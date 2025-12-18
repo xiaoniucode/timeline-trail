@@ -1,11 +1,10 @@
 name: Docker镜像构建和发布
 
 on:
+  workflow_dispatch:    # 🎮 手动触发
   push:
     tags:
-      - 'v*'
-    branches:
-      - main
+      - 'v*'           # 🏷️ 版本标签触发
 env:
   # docker 项目仓库
   DOCKER_REPOSITORY: 'xiaoniucode/timeline-trail'
