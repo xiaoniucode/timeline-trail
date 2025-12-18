@@ -4,6 +4,8 @@ on:
   push:
     tags:
       - 'v*'
+    branches:
+      - main
 env:
   # docker 项目仓库
   DOCKER_REPOSITORY: 'xiaoniucode/timeline-trail'
@@ -22,6 +24,7 @@ jobs:
         with:
           java-version: '8'
           distribution: 'temurin'
+          cache: maven
 
       # 3. 构建JAR包
       - name: Maven打包jar
